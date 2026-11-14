@@ -119,7 +119,10 @@
   </li>
 
 </ul>
+
 <h2>5. Indicators of Compromise (IoCs)</h2>
+
+  
 <ul>
   <li>Suspicious sender email address</li>
   <li>Phishing-domain:
@@ -134,12 +137,108 @@
    
 </ul>
 
-  <h2>6. Risk Assessment</h2>
+<h2>6. Email Analysis and Assessments</h2>
+
+  <p>
+    The suspicious email was examined to identify
+    characteristics commonly ssociated with phishing
+    and credential stealing attempts.  The following
+    table summarizes the observations and their potential
+    security implications.
+  </p>
+
+  <table border="1">
+
+    <tr>
+      <th>Email Characteristc</th>
+      <th>Observation</th>
+      <th>Security Significance</th>
+    </tr>
+    <tr>
+      <td>Sender Address</td>
+      <td>
+        logistics-notification@northstar-billing.comexample
+      </td>
+      <td>
+        The sender address uses an unverified
+        domain and does not establish a legitimate
+        relationship with the institution.
+      </td>
+      </tr>
+      <tr>
+      <td>Email Subject</td>
+      <td>
+          URGENT: Outstanding Invoice - 
+          Immediate Review Required
+      </td>
+      <td>
+          Urgent language may pressure the recipient
+          into acting without verifying the request.
+      </td>
+       </tr>
+
+       <tr>
+         <td>Unexpected Request</td>
+         <td>
+           Employee receives an unexpected
+           invoice notification.
+         </td>
+         <td>
+           Unexpected finacnial requests should be 
+           independently verified before action 
+           is taken.
+         </td>
+       </tr>
+
+        <tr>
+          <td>Embedded Link</td>
+            <td>
+              Link directs the employee to a
+              fraudulent login page.
+            </td>
+            <td>
+              The page is designed to capture
+              corporate authentication credentials.
+            </td>
+        </tr>
+
+         <tr>
+           <td>Credential Submission</td>
+           <td>
+             Credentials may hve been exposed, 
+             creating a potential unauthorized 
+             access risk.
+           </td>
+         </tr>
+
+  </table>
+
+  <h3>Analyst Assessment</h3>
+
+  <p>
+    Based upon the simulated evidence, the email 
+    demonstrates multiple characteristics consistent
+    with a phishing attempt.  The combination of an
+    unverified sender, urgent financial language, 
+    and a fraudulent login destination indicates
+    an attempt to obtain employee credentials.
+  </p>
+
+  <p>
+    The submission of credential increses the 
+    seriousness of the incident.  However, credential
+    submission alone does not establish that the 
+    account was subsequently accessed by an
+    unauthorized party.  Authentication logs and 
+    other security records would be required to 
+    confirm potential account compromise.
+  </p>
+<h2>7. Risk Assessment</h2>
 
   <p>
     The email represents a potential credential stealing
     threat. By directing the employee to a fraudulent
-    login page, he sender attempts to obtain corporate
+    login page, the sender attempts to obtain corporate
     authentication credentials.
   </p>
 
@@ -150,7 +249,7 @@
     the credentials wer subsequently misused.
   </p>
 
-  <h2>7. Recommendations</h2>
+<h2>8. Recommendations</h2>
 
   <ul>
      <li>Report the suspicious email to the security team.</li>
@@ -160,7 +259,7 @@
      <li>Strengthen employee phishing awareness training.</li>
   </ul>
 
-  <h2>8. Conclusion</h2>
+<h2>9. Conclusion</h2>
 
   <p>
     This analysis demonstrates the importance of identifying
