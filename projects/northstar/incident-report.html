@@ -291,12 +291,174 @@
 
    <p>
         <em>
-            Edidence Notes:  All timestamps and activities
+            Evidence Notes:  All timestamps and activities
             in this timeline are simulated for educational
             purposes.  They represent the fictional Northstar
             Incident scenario.
         </em>
    </p>     
+
+
+<h2>6. Investigation Findings</h2>
+
+<p>
+        Following the inital SIEM alert, the SOC Analyst reviewed
+        the available authentication records associated with 
+        Joaquin Fernandes' employee account.  The investigation
+        focused on identifying suspicious login activity and 
+        determining whether the exposed credentials had been used
+        successfully.
+</p>
+
+<h3>Authentication Log Review</h3>
+
+<p>
+        The following table represents a simulated summary of authentication events 
+        reviewed during the investigation.
+</p>
+
+<table border="1">
+        <tr>
+                <th>Time (EST)</th>
+                <th>Event</th>
+                <th>Result</th>
+                <th>Analyst Observation</th>
+         </tr>
+
+         <tr>
+                 <td>9:18 AM</td>
+                 <td>>
+                         Employee submits credentials
+                         through fraudulent login page.
+                 </td>
+                 <td>
+                         Credential exposure
+                 </td>
+                 <td>
+                         Potential compromise of employee
+                         authentication information.
+                 </td>
+         </tr>
+
+         <tr>
+                 <td>9:25 AM</td>
+                 <td>
+                         Authentication attempt associated with an 
+                         unfamiliar source address.
+                 </td>
+
+                 <td>
+                         MFA challenge unsuccessful
+                 </td>
+                 <td>
+                         Suspicious authentication activity
+                         requiring investigation.
+                 </td>
+         </tr>
+         <tr>
+                 <td>9:27 AM</td>
+                 <td>
+                         SIEM generates unusual authentication activity alert.
+                 </td>
+                 <td>
+                         Alert generated
+                 </td>
+                 <td>
+                         Security monitoring identifies potentially 
+                         suspicious activity.
+                 </td>
+         </tr>
+         <tr>
+                 <td>9:34 AM</td>
+                 <td>
+                         SOC Analyst reviews authentication records.
+                  </td>
+                   <td>
+                        Investigation initiated
+                   </td>
+                   <td>
+                           Alert correlated with the reported phishing incident.
+                   </td>
+         </tr>
+</table>
+
+<h3> Key Investigation Findings</h3>
+
+<ul>
+        <li>
+                <strong>Credential Exposure:</strong>
+                The employee submitte corporate 
+                credentials through a fraudulent login
+                page.
+        </li>
+
+        <li>
+                <strong>Suspicious Authentication:</strong>
+                An unfamiliar authentication attempt was
+                identified follwoing the credential 
+                submission.
+        </li>
+
+        <li>
+                <strong> Unsuccessful MFA Challenge:</strong>
+                The simulated authentication record indicates
+                that the authentication challenge was not 
+                complete.
+        </li>
+
+        <li>
+                <strong>SIEM Detection:</strong>
+                The security monitoring system generated
+                an alert that prompted further investigation.
+        </li>
+
+        <li>
+                <strong>No Confirmed Successful Access:</strong>
+                The available simulated records do not establish
+                that an unauthorized party successfully accessed
+                the employee account.
+        </li>
+
+</ul>
+
+<h3>Evidence Assessment</h3>
+
+<p>
+        The correlation between the phishing email, credential submission, and subsequent
+        suspicious authentication activity indicates a credible account compromise risk.
+</p>
+
+<p>
+        However, the unsuccessful MFA challenge and absence of a confirmed successful
+        authentication event mean that unauthorized account access has not been
+        established.
+</p>
+
+<p>
+        Additional investigation of authentication logs, endpoint activity, and 
+        avaible security monitoring records would be necessary to determine whether
+        other organizational resources are affected.
+</p>
+
+<h3>Incident Classification</h3>
+
+<p>
+        Based on the available evidence, the incident is classified as a suspected
+        credential compromise attempt with suspicious authentication activity.
+</p>
+
+<p>
+        The incident requires containment and remediation because employee credentials
+        were exposed, even though successfule unauthorized access has not been confirmed.
+</p>
+
+<p>
+        <em>
+                Evidence Disclaimer: All authentication events, log summaries, and investigation
+                findings are simulated for educational purposes.  No actual Northstar systems or
+                employee accounts exist.
+        </em>
+</p>
         
 <hr>
 
@@ -337,7 +499,7 @@
       Disclaimer: Northstar Financial Services,
       its employees, systems, alerts, and incident
       details are fictional and developed for 
-      educationalpurposes.
+      educational purposes.
     </em>
   </p>
   
