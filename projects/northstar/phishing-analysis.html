@@ -327,20 +327,115 @@
      <li>Strengthen employee phishing awareness training.</li>
   </ul>
 
-<h2>10. Conclusion</h2>
-
+<h2>10. Final Findings and Analyst Conclusion</h2>
+<h3>Summary of Findings</h3>
+  
   <p>
-    This analysis demonstrates the importance of identifying
-    suspicious email characteristics and recognizing potential
-    phishing attempts
+    The investigation identified a simulted phishing email
+    targeting an employee in the Northstar Financial Services
+    Logistics department.  The message used urgent invoice-related
+    language and directed the recipient to a fraudulent login page.
   </p>
 
   <p>
-    The findings prove the starting poin for the incident
-    reponse investigation documented in Project 02.
+    The employee submitted corporate credentials
+    through the simulated fraudulent page.  This represents 
+    potential credential exposure and requires further
+    investigation.
   </p>
 
+  <h3>Key Findings</h3>
+
+  <ul>
+    <li>
+      An unverified sender address was identified
+    </li>
+
+    <li>
+       The email contained language intended to create urgency.
+    </li>
+
+    <li>
+        The message directed the employee to a fraudulent login
+      page.
+    </li>
+
+    <li>
+       Corporate credentials wer submitted through the fraudulent
+      page.
+    </li>
+  
+     <li>
+       Further investigation is required to determine whether unauthorized
+       account access occurred.
+     </li>  
+  </ul>
+
+  <h3>Recommeded Security Actions</h3>
+    <ol>
+      
+      <li>
+        Immediately reset the affected employee's corporate password.
+      </li>
+      
+      <li>
+        Reviw authentication logs for suspicious login attempts and 
+        unusual account activity.
+      </li>
+
+      <li>
+        Revoke active sessions and review authentication tokens where
+        appropriate.
+      </li>
+
+      <li>
+        Block the identified phisihing domain through appropriate security
+        controls.
+      </li>
+
+      <li>
+        Notify the organization's incident response team and document the 
+        incident.
+      </li>
+
+      <li>Provide additional phishing awareness training to employees.</li>
+           
+    </ol>
+   <h3>Outstanding Investigation Requirements</h3>
+
+  <p> 
+  Although the phishing attempt and credential submission have been 
+  established within this simulated scenario, unauthorized account access
+  hs not yet been confirmed.
+  </p>
+  
+  <p>
+    The incident response investigation should examine authentication records,
+    account activity, and available secuirty alerts to determine whether the 
+    exposed credentials were misused.
+  </p>
+
+  <h3>Analyst Conclusion</h3>
+
+  <p>
+    This investigation demonstrates how phishing
+    emails can be used to manipulate employees
+    and expose organizational credentials.
+    Identifying suspicious email characteristics, 
+    assessing potential risks, and documenting 
+    evidence are important responsibilities 
+    within a cybersecurity operations environment.
+  </p>
+
+  <p> 
+     The findings from thsi analysis provide the foundation
+     for the 02 Prohect, which examines the incident response
+     process and the actions taken by the Northstar security
+     team.
+  </p>
+  
   <hr>
+  
   <h3>Northstart Investigation Navigation</h3>
   <p>
     <a href="index.html">Northstar Overview</a>
