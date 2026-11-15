@@ -1,1 +1,894 @@
 
+
+
+
+<!DOCTYPE html><html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MITRE ATT&CK Mapping - Northstar Financial Services</title>
+
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+max-width: 1100px;
+margin: auto;
+padding: 20px;
+color: #263445;
+background-color: #ffffff;
+}
+
+nav {
+line-height: 2;
+}
+
+nav a {
+color: #174a75;
+text-decoration: none;
+margin-right: 10px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+h1, h2, h3 {
+color: #173b5e;
+}
+
+h1 {
+border-bottom: 3px solid #174a75;
+padding-bottom: 12px;
+}
+
+h2 {
+margin-top: 35px;
+border-bottom: 1px solid #ccd5df;
+padding-bottom: 6px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+}
+
+th, td {
+border: 1px solid #b9c5d1;
+padding: 10px;
+text-align: left;
+vertical-align: top;
+}
+
+th {
+background-color: #e8eef4;
+color: #173b5e;
+}
+
+.note {
+background-color: #f1f5f9;
+border-left: 4px solid #174a75;
+padding: 12px;
+margin: 18px 0;
+}
+
+footer {
+margin-top: 35px;
+border-top: 1px solid #ccd5df;
+padding-top: 15px;
+font-size: 0.95em;
+}
+
+code {
+color: #174a75;
+}
+
+@media (max-width: 650px) {
+body {
+padding: 12px;
+}
+
+table {
+font-size: 0.9em;
+}
+
+th, td {
+padding: 6px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav aria-label="Main navigation">
+<a href="../../index.html">Home</a> |
+<a href="../../about.html">About Me</a> |
+<a href="../../resume.html">Resume</a> |
+<a href="../../skills.html">Cybersecurity Skills</a> |
+<a href="../../projects.html">Projects and Academic Work</a> |
+<a href="../../certifications.html">Certifications and Training</a>
+</nav>
+
+<hr>
+
+<h1>03 Project - MITRE ATT&CK Framework</h1>
+
+<h2>Northstar Financial Services</h2>
+
+<p>
+<strong>Project Title:</strong>
+Adversary Tactics, Techniques and Threat Analysis
+</p>
+
+<p>
+<strong>Case Study:</strong>
+Suspected Unauthorized Account Access Following Phishing
+</p>
+
+<p>
+<strong>Prepared By:</strong>
+Junior Cybersecurity Analyst
+</p>
+
+<p>
+<strong>Framework:</strong>
+MITRE ATT&CK Enterprise
+</p>
+
+<hr>
+
+<h2>1. Introduction and Project Objectives</h2>
+
+<p>
+This project applies the MITRE ATT&CK framework to the simulated
+phishing incident investigated at Northstar Financial Services.
+The objective is to identify relevant adversary tactics and
+techniques based on the available incident evidence.
+</p>
+
+<p>
+The analysis builds upon the findings documented in Project 02,
+the Incident Response Report. It examines how the phishing
+activity may be represented within the MITRE ATT&CK framework
+and identifies opportunities to improve organizational security
+monitoring and defensive capabilities.
+</p>
+
+<h3>Project Objectives</h3>
+
+<ul>
+<li>
+Identify relevant adversary tactics and techniques
+associated with the phishing incident.
+</li>
+
+<li>
+Map observed activities to appropriate MITRE ATT&CK
+technique identifiers.
+</li>
+
+<li>
+Distinguish confirmed observations from potential
+adversary activities.
+</li>
+
+<li>
+Identify opportunities for improved security detection.
+</li>
+
+<li>
+Recommend defensive measures to reduce the risk of
+similar incidents.
+</li>
+</ul>
+
+<h2>2. Incident Overview</h2>
+
+<p>
+On November 06, 2026, Northstar Financial Services experienced
+a simulated phishing incident involving an employee in the
+Logistics Department.
+</p>
+
+<p>
+The incident began when Joaquin Fernandes received a fraudulent
+invoice notification email containing an embedded link.
+The employee accessed the associated fraudulent login page
+and submitted corporate credentials.
+</p>
+
+<p>
+Subsequently, an unfamiliar authentication attempt was identified
+in the simulated authentication records. The associated
+multifactor authentication challenge was unsuccessful.
+Northstar's Security Operations Center investigated the activity
+and initiated containment and recovery measures.
+</p>
+
+<h3>Key Incident Observations</h3>
+
+<ul>
+<li>A fraudulent invoice notification email was received.</li>
+<li>The email contained a link to a fraudulent login page.</li>
+<li>The employee submitted corporate credentials.</li>
+<li>An unfamiliar authentication attempt was identified.</li>
+<li>The associated MFA challenge was unsuccessful.</li>
+<li>The SIEM generated a suspicious authentication alert.</li>
+<li>The affected account was secured through containment and recovery activities.</li>
+</ul>
+
+<div class="note">
+<strong>Evidence Limitation:</strong>
+The available simulated records do not establish that an
+unauthorized party successfully authenticated or accessed
+Northstar's organizational resources. All activities described
+in this case study are fictional and developed for educational
+purposes.
+</div>
+
+<h2>3. Understanding the MITRE ATT&CK Framework</h2>
+
+<p>
+MITRE ATT&CK is a globally recognized knowledge base that
+documents adversary behaviours observed during cybersecurity
+incidents and intrusions.
+</p>
+
+<p>
+The framework organizes adversary behaviour into tactics,
+techniques and sub-techniques. It provides cybersecurity
+professionals with a common structure for understanding,
+analyzing, detecting and mitigating potential threats.
+</p>
+
+<h3>Tactics</h3>
+
+<p>
+Tactics represent the adversary's tactical objectives or
+the reasons behind particular actions. They describe what
+an adversary is attempting to accomplish.
+</p>
+
+<h3>Techniques</h3>
+
+<p>
+Techniques describe how an adversary may attempt to achieve
+a particular objective. They provide a more detailed
+description of adversary behaviour.
+</p>
+
+<h3>Sub-techniques</h3>
+
+<p>
+Sub-techniques provide additional detail about specific
+methods used to carry out a technique.
+</p>
+
+<p>
+For this investigation, the Enterprise ATT&CK framework
+provides the basis for analyzing the phishing and credential
+exposure activities documented in the Northstar incident.
+</p>
+
+<p>
+<strong>Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+MITRE ATT&CK Official Website
+</a>
+</p>
+
+<h2>4. MITRE ATT&CK Technique Mapping</h2>
+
+<p>
+The following mapping identifies techniques that are relevant
+to the observed activities in the Northstar phishing incident.
+Each mapping is evaluated against the available simulated
+investigation evidence.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>ATT&CK ID</th>
+<th>Tactic</th>
+<th>Technique</th>
+<th>Northstar Evidence and Assessment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>T1566.002</td>
+<td>Initial Access</td>
+<td>Spearphishing Link</td>
+<td>
+The employee received a fraudulent invoice email
+containing a link to a deceptive login page.
+The employee accessed the page.
+<strong>Strongly supported by the simulated evidence.</strong>
+</td>
+</tr>
+
+<tr>
+<td>T1056.003</td>
+<td>Credential Access / Collection</td>
+<td>Web Portal Capture</td>
+<td>
+The employee submitted corporate credentials
+through a fraudulent login page. This behaviour
+is consistent with credential capture through
+a deceptive web portal. However, actual
+credential collection and transmission by an
+adversary were not independently established.
+<strong>Conditional mapping.</strong>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>4.1 T1566.002 - Spearphishing Link</h3>
+
+<p>
+<strong>Tactic:</strong> Initial Access
+</p>
+
+<p>
+<strong>Technique ID:</strong> T1566.002
+</p>
+
+<p>
+<strong>Technique:</strong> Spearphishing Link
+</p>
+
+<p>
+This technique describes the use of phishing emails containing
+malicious links to encourage recipients to access websites
+controlled or manipulated by an adversary.
+</p>
+
+<p>
+In the Northstar scenario, the employee received an invoice
+notification email containing an embedded link. The link
+directed the employee to a fraudulent login page that
+requested corporate authentication credentials.
+</p>
+
+<p>
+The use of a deceptive business-related email and embedded
+link is consistent with the behaviour described by MITRE
+ATT&CK T1566.002.
+</p>
+
+<p>
+<strong>Assessment:</strong>
+This is the strongest technique mapping identified in
+the available incident evidence.
+</p>
+
+<p>
+<strong>MITRE Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+T1566.002 - Spearphishing Link
+</a>
+</p>
+
+<h3>4.2 T1056.003 - Web Portal Capture</h3>
+
+<p>
+<strong>Tactic:</strong> Credential Access / Collection
+</p>
+
+<p>
+<strong>Technique ID:</strong> T1056.003
+</p>
+
+<p>
+<strong>Technique:</strong> Web Portal Capture
+</p>
+
+<p>
+This sub-technique describes adversary activity involving
+the capture of credentials submitted through a web portal
+or login page.
+</p>
+
+<p>
+In the Northstar scenario, Joaquin Fernandes submitted
+corporate credentials through a fraudulent login page.
+This behaviour is consistent with the type of credential
+collection associated with deceptive web portals.
+</p>
+
+<p>
+However, the available evidence confirms credential
+submission but does not independently establish that
+the fraudulent website successfully captured and
+transmitted the credentials to an adversary.
+</p>
+
+<p>
+Consequently, this technique is included as a conditional
+mapping rather than a confirmed adversary activity.
+Additional evidence, such as simulated phishing-site
+records or credential collection logs, would be required
+to establish this activity more conclusively.
+</p>
+
+<p>
+<strong>MITRE Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+T1056.003 - Web Portal Capture
+</a>
+</p>
+
+<h3>4.3 Valid Accounts - T1078</h3>
+
+<p>
+MITRE ATT&CK T1078 describes adversary abuse of legitimate
+account credentials to obtain or maintain access to
+organizational systems and resources.
+</p>
+
+<p>
+Although the Northstar employee submitted corporate
+credentials through the fraudulent login page, the
+subsequent authentication attempt was unsuccessful
+at the MFA challenge stage.
+</p>
+
+<p>
+The available evidence does not establish that an
+adversary successfully authenticated using the
+employee's credentials.
+</p>
+
+<p>
+Therefore, T1078 is not included as a confirmed
+technique in this investigation.
+It remains a potential area for further investigation
+if additional evidence of successful authentication
+becomes available.
+</p>
+
+<p>
+<strong>MITRE Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+T1078 - Valid Accounts
+</a>
+</p>
+
+<h2>5. Attack Sequence Analysis</h2>
+
+<p>
+The following sequence illustrates how the observed
+Northstar activities relate to the MITRE ATT&CK framework.
+It represents the documented incident progression rather
+than a confirmed successful intrusion.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Sequence</th>
+<th>Observed Activity</th>
+<th>ATT&CK Mapping</th>
+<th>Assessment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Fraudulent invoice notification email delivered.</td>
+<td>T1566.002</td>
+<td>Phishing link observed.</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Employee accesses the fraudulent login page.</td>
+<td>T1566.002</td>
+<td>User interaction observed.</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Employee submits corporate credentials.</td>
+<td>T1056.003</td>
+<td>Credential capture mechanism not independently verified.</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Unfamiliar authentication attempt identified.</td>
+<td>Further investigation required.</td>
+<td>MFA challenge unsuccessful.</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>SIEM generates an unusual authentication alert.</td>
+<td>Detection and monitoring activity.</td>
+<td>Security monitoring response.</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Attack Sequence Assessment</h3>
+
+<p>
+The incident demonstrates how phishing can be used to
+deceive employees into disclosing sensitive authentication
+information.
+</p>
+
+<p>
+The subsequent unfamiliar authentication attempt indicates
+that the exposed credentials created a potential account
+compromise risk. However, the unsuccessful MFA challenge
+prevented the investigation from establishing successful
+unauthorized access.
+</p>
+
+<p>
+The incident therefore demonstrates a potential attack
+progression that was interrupted during the authentication
+stage.
+</p>
+
+<div class="note">
+<strong>Important:</strong>
+The sequence does not establish that the adversary completed
+all potential attack stages. No successful unauthorized
+account access, persistence, lateral movement or data
+exfiltration was confirmed in the available evidence.
+</div>
+
+<h2>6. Detection Opportunities</h2>
+
+<p>
+The Northstar incident highlights opportunities to strengthen
+security monitoring and improve the identification of
+phishing-related activity.
+</p>
+
+<h3>Email and Web Activity Monitoring</h3>
+
+<p>
+Northstar should improve monitoring of incoming emails
+containing suspicious links, particularly messages that
+imitate legitimate business communications such as
+invoice notifications.
+</p>
+
+<p>
+Email security controls should correlate suspicious
+messages with subsequent employee browser activity
+where appropriate.
+</p>
+
+<h3>Authentication Monitoring</h3>
+
+<p>
+The organization should continue monitoring authentication
+records for unusual login attempts, unfamiliar source
+addresses, repeated authentication failures and
+unsuccessful MFA challenges.
+</p>
+
+<h3>SIEM Correlation</h3>
+
+<p>
+The SIEM should correlate relevant email security,
+web activity and identity authentication events to
+provide analysts with a clearer picture of potential
+phishing-related account compromise.
+</p>
+
+<h3>MITRE ATT&CK Detection Reference</h3>
+
+<p>
+MITRE ATT&CK provides a detection strategy for
+Spearphishing Links under detection strategy DET0107.
+It describes opportunities to correlate incoming
+emails containing suspicious links with subsequent
+user-driven browser activity.
+</p>
+
+<p>
+Northstar could use this guidance to improve the
+correlation of email, web proxy and authentication
+security records.
+</p>
+
+<p>
+<strong>Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+DET0107 - Detection Strategy for Spearphishing Links
+</a>
+</p>
+
+<h2>7. Mitigation and Security Recommendations</h2>
+
+<p>
+Based on the identified activities, the following
+recommendations are proposed to strengthen Northstar's
+defensive security capabilities.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Security Area</th>
+<th>Recommended Action</th>
+<th>Expected Security Benefit</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Email Security</td>
+<td>
+Strengthen email filtering, malicious link
+detection and sender authentication controls.
+</td>
+<td>
+Reduce exposure to fraudulent emails.
+</td>
+</tr>
+
+<tr>
+<td>Employee Awareness</td>
+<td>
+Provide regular phishing awareness training
+and simulated phishing exercises.
+</td>
+<td>
+Improve employee recognition of social
+engineering attempts.
+</td>
+</tr>
+
+<tr>
+<td>Identity Protection</td>
+<td>
+Evaluate phishing-resistant multifactor
+authentication.
+</td>
+<td>
+Strengthen protection against credential
+misuse.
+</td>
+</tr>
+
+<tr>
+<td>Security Monitoring</td>
+<td>
+Improve SIEM correlation of suspicious
+email, browser and authentication events.
+</td>
+<td>
+Improve detection and investigation
+capabilities.
+</td>
+</tr>
+
+<tr>
+<td>Web Security</td>
+<td>
+Apply appropriate web filtering and
+block confirmed malicious domains.
+</td>
+<td>
+Reduce access to known phishing websites.
+</td>
+</tr>
+
+<tr>
+<td>Incident Response</td>
+<td>
+Maintain documented procedures for
+reporting phishing and responding
+to suspected account compromise.
+</td>
+<td>
+Improve response coordination and
+containment.
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommended MITRE ATT&CK Mitigations</h3>
+
+<p>
+The following MITRE ATT&CK mitigation references are
+particularly relevant to the phishing activity identified
+in this investigation:
+</p>
+
+<ul>
+<li>
+<strong>M1017 - User Training:</strong>
+Educate employees about phishing and social
+engineering techniques.
+</li>
+
+<li>
+<strong>M1021 - Restrict Web-Based Content:</strong>
+Restrict access to websites that present
+unnecessary security risks.
+</li>
+
+<li>
+<strong>M1054 - Software Configuration:</strong>
+Apply appropriate email authentication and
+security configuration controls.
+</li>
+</ul>
+
+<p>
+<strong>Reference:</strong>
+
+target="_blank" rel="noopener noreferrer">
+MITRE ATT&CK T1566.002 - Mitigations
+</a>
+</p>
+
+<h2>8. Conclusion</h2>
+
+<p>
+The MITRE ATT&CK analysis of the Northstar Financial
+Services phishing incident demonstrates how a
+framework-based approach can help cybersecurity
+professionals interpret and classify observed
+adversary behaviour.
+</p>
+
+<p>
+The strongest technique mapping identified was
+T1566.002 - Spearphishing Link, which corresponds
+to the fraudulent invoice notification email and
+embedded link used to direct the employee to a
+deceptive login page.
+</p>
+
+<p>
+T1056.003 - Web Portal Capture was identified as
+a conditional mapping because the employee submitted
+credentials through the fraudulent page, although
+successful credential collection by an adversary
+was not independently established.
+</p>
+
+<p>
+The investigation did not confirm successful
+unauthorized authentication. Consequently, the
+analysis does not classify T1078 - Valid Accounts
+as a confirmed adversary technique.
+</p>
+
+<p>
+The findings highlight the importance of layered
+security controls, employee awareness, effective
+multifactor authentication and continuous security
+monitoring.
+</p>
+
+<p>
+Applying MITRE ATT&CK has provided a structured
+approach to understanding the incident and identifying
+opportunities for Northstar to strengthen its
+cybersecurity posture.
+</p>
+
+<h2>9. References</h2>
+
+<p>
+The following authoritative resources were consulted
+during the preparation of this analysis.
+</p>
+
+<ol>
+<li>
+MITRE. (n.d.). MITRE ATT&CK Framework.
+
+target="_blank" rel="noopener noreferrer">
+https://attack.mitre.org/
+</a>
+</li>
+
+<li>
+MITRE. (n.d.). T1566.002 - Spearphishing Link.
+
+target="_blank" rel="noopener noreferrer">
+Official Technique Reference
+</a>
+</li>
+
+<li>
+MITRE. (n.d.). T1056.003 - Web Portal Capture.
+
+target="_blank" rel="noopener noreferrer">
+Official Technique Reference
+</a>
+</li>
+
+<li>
+MITRE. (n.d.). T1078 - Valid Accounts.
+
+target="_blank" rel="noopener noreferrer">
+Official Technique Reference
+</a>
+</li>
+
+<li>
+MITRE. (n.d.). DET0107 - Detection Strategy for
+Spearphishing Links.
+
+target="_blank" rel="noopener noreferrer">
+Official Detection Strategy
+</a>
+</li>
+</ol>
+
+<hr>
+
+<h2>Northstar Investigation Navigation</h2>
+
+<p>
+<a href="index.html">Northstar Overview</a>
+</p>
+
+<p>
+<a href="phishing-analysis.html">
+01 Project - Phishing Email Analysis
+</a>
+</p>
+
+<p>
+<a href="incident-response.html">
+02 Project - Incident Response Report
+</a>
+</p>
+
+<p>
+<a href="../../projects.html">
+Back to Projects and Academic Work
+</a>
+</p>
+
+<hr>
+
+<footer>
+
+<p>
+<strong>Colin Peart</strong><br>
+Cybersecurity ePortfolio<br>
+Toronto Metropolitan University
+</p>
+
+<p>
+<em>
+Disclaimer: Northstar Financial Services, its employees,
+systems, security alerts, authentication records and
+incident activities are fictional and developed for
+educational purposes. This analysis does not represent
+an actual cybersecurity incident.
+</em>
+</p>
+
+</footer>
+
+</body>
+</html>
