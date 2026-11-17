@@ -89,9 +89,66 @@
         font-size: 1.6em;
       }
     }
-    </style>
+  .skills-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 24px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .skills-section h1 {
+    color: #17365d;
+    margin-bottom: 16px
+  }
+  .skills-intro {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .skills-grid {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .skill-card {
+    background: #fff;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  }
+   .skill-icon {
+     font-size: 30px;
+     margin-bottom: 12px;
+   }
+  .skill-card p {
+    color:#555;
+    line-height: 1.6;
+  }
+   .skill-card a {
+     color: #1769aa
+     font-weight: bold;
+     font-weight: bold;
+     text-decoration: underline;
+   }
+  @ media (max-width: 650px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
     
+    
+    
+
+   </style>
+
+  
 </head>
+
 <body>
 
   <nav aria-label="Main navigation">
@@ -103,8 +160,55 @@
 <a href="certifications.html">Certifications and Training</a>
 </nav>
 
+
 <hr>
- 
+
+<section class= "skills-section">
+<h1>Cybersecurity Skills & Competencies</h1>
+  <p class="skills-intro">
+  Cybersecurity demands technical, analytical, and communication skills. Technical expertise builds
+  defenses and responds to threats.  Analytical skills uncover patterns and assess risk in complex
+  data.  Communication translates findings for non-technical stakeholders so they can act on them.
+  Together, these skills turn raw security data into informed decisions that protect
+  organizations.
+</p>
+
+<div class = "skills-grid">
+  <article class="skill-card">
+   <div class="skill-icon">🛡️</div> 
+    <h2>Cybersecurity Operations</h2>
+    <p>
+      Threat detection, phishing analysis, incident response, and threat intelligence.
+    </p>
+    <a href="projects/northstar/index.html"> View Northstar Case Study
+    </a>
+  </article>
+
+  <article class="skill-card">
+    <div class="skill-icon">🌐</div>
+    <h2>Technical Competencies</h2>
+    <p>
+      Network security, SIEM concepts, operating systems, Python, and SQL.
+    </p>
+  </article>
+
+  <article class="skill-card">
+    <div class="skill-icon">🔒</div>
+    <h2>Risk Management</h2>
+  <p>
+    Risk assessment, identity and access management, governance, and security awareness.
+  </p>
+  </article>
+
+  <article class="skill-card">
+    <div class="skill-icon">✏️📄</div>
+    <h2>Professional Communication</h2>
+    <p>
+      Technical writing, analytical reasoning, collaboration, and professional documentation.
+    </p>
+  </article>
+</div>
+</section>
   
 </body>
 </html>
