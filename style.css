@@ -1,1 +1,561 @@
 
+
+/* EDUCATION & CERTIFICATIONS PAGE */
+
+
+
+.credentials-page {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 48px 24px 72px;
+
+  font-family: Arial, sans-serif;
+
+  color: #243247;
+
+}
+
+
+
+.credentials-page * {
+
+  box-sizing: border-box;
+
+}
+
+
+
+.page-intro {
+
+  margin-bottom: 48px;
+
+}
+
+
+
+.page-intro h1 {
+
+  color: #17365d;
+
+  font-size: clamp(28px, 4vw, 38px);
+
+  line-height: 1.2;
+
+  margin-bottom: 16px;
+
+}
+
+
+
+.tagline {
+
+  color: #1769aa;
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.page-intro p,
+
+.credential-section p {
+
+  line-height: 1.7;
+
+}
+
+
+
+.credential-section {
+
+  margin-bottom: 48px;
+
+}
+
+
+
+.credential-section h2 {
+
+  color: #17365d;
+
+  font-size: 25px;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 2px solid #e2e8f0;
+
+}
+
+
+
+.section-description {
+
+  max-width: 850px;
+
+  margin-bottom: 24px;
+
+  color: #526174;
+
+}
+
+
+
+/* EDUCATION CARD */
+
+
+
+.education-card {
+
+  display: flex;
+
+  gap: 24px;
+
+  padding: 30px;
+
+  background: #f4f7fb;
+
+  border: 1px solid #dce3ec;
+
+  border-radius: 12px;
+
+}
+
+
+
+.credential-icon {
+
+  font-size: 36px;
+
+  flex-shrink: 0;
+
+}
+
+
+
+.education-card h3 {
+
+  color: #17365d;
+
+  font-size: 23px;
+
+  margin: 0 0 6px;
+
+}
+
+
+
+.credential-subtitle {
+
+  font-weight: 600;
+
+  margin: 0;
+
+}
+
+
+
+.institution {
+
+  color: #526174;
+
+  margin-top: 4px;
+
+}
+
+
+
+.education-card h4 {
+
+  margin-top: 22px;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.education-card ul {
+
+  padding-left: 20px;
+
+  line-height: 1.8;
+
+}
+
+
+
+/* CERTIFICATION CARDS */
+
+
+
+.certification-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+
+}
+
+
+
+.certification-card {
+
+  background: #ffffff;
+
+  border: 1px solid #dce3ec;
+
+  border-radius: 12px;
+
+  padding: 26px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+
+
+.certification-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.certification-card h3 {
+
+  color: #17365d;
+
+  font-size: 19px;
+
+  margin: 16px 0 6px;
+
+}
+
+
+
+.certification-provider {
+
+  color: #1769aa;
+
+  font-weight: 600;
+
+  margin: 0 0 12px;
+
+}
+
+
+
+.certification-card p {
+
+  font-size: 14px;
+
+  color: #526174;
+
+}
+
+
+
+.credential-label {
+
+  margin-top: auto;
+
+  padding: 6px 12px;
+
+  background: #edf2f8;
+
+  color: #17365d;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+
+
+/* PROFESSIONAL DEVELOPMENT */
+
+
+
+.development-list {
+
+  display: grid;
+
+  gap: 16px;
+
+}
+
+
+
+.development-item {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 22px;
+
+  border: 1px solid #dce3ec;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+}
+
+
+
+.development-icon {
+
+  font-size: 28px;
+
+  flex-shrink: 0;
+
+}
+
+
+
+.development-item h3 {
+
+  color: #17365d;
+
+  font-size: 18px;
+
+  margin: 0 0 8px;
+
+}
+
+
+
+.development-item p {
+
+  margin: 0;
+
+  color: #526174;
+
+}
+
+
+
+/* CONTINUOUS LEARNING */
+
+
+
+.learning-section {
+
+  background: #f4f7fb;
+
+  padding: 28px;
+
+  border-radius: 12px;
+
+}
+
+
+
+.learning-section h2 {
+
+  margin-top: 0;
+
+}
+
+
+
+.portfolio-disclaimer {
+
+  font-size: 13px;
+
+  color: #64748b;
+
+  font-style: italic;
+
+  margin-top: 32px;
+
+}
+
+
+
+/* SHARED NAVIGATION AND FOOTER */
+
+
+
+.site-header {
+
+  background: #17365d;
+
+}
+
+
+
+.site-nav {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 18px 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+}
+
+
+
+.site-brand {
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+}
+
+
+
+.nav-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+}
+
+
+
+.nav-links a {
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+}
+
+
+
+.nav-links a:hover,
+
+.nav-links a[aria-current="page"] {
+
+  text-decoration: underline;
+
+  text-underline-offset: 5px;
+
+}
+
+
+
+.site-footer {
+
+  background: #17365d;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  padding: 24px;
+
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+
+
+@media (max-width: 800px) {
+
+  .certification-grid {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+
+
+  .site-nav {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .certification-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  .education-card {
+
+    flex-direction: column;
+
+    padding: 22px;
+
+  }
+
+
+
+  .development-item {
+
+    padding: 18px;
+
+  }
+
+
+
+  .credentials-page {
+
+    padding: 32px 16px 56px;
+
+  }
+
+}
