@@ -1,71 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description"
-      content="Education, certifications and professional development portfolio">
-    <title>Education & Certifications | Colin Peart</title>
-    <link rel= "stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <header class="site-header">
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="site-brand" href="index.html">Colin Peart</a>
+<!-- All script adapted from adapted from website: freefrontend.com/css-card-layouts -->
+<head>
+<meta charset="UTF-8">
+  <title>Cybersecurity Skills & Competencies</title>
+<style>
+    
+    /* Need to punch this up a bit! */
 
-      <div class = "nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="resume.html">Resumes</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="certifications.html"> aria-current="page">
-          Certifications
-        </a>
-      </div>
-      </nav>
-    </header>
+    body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #f4f6f9;
+          color: #333333;
+          margin: 0;
+          line-height: 1.7;
+    }
 
-  <main class="credentials-page">
+    /* navigation bar */
 
-    /* PAGE INTRODUCTION */
-    <section class="page-intro">
-      <h1>Education, Certifications & Professional Development</h1>
+    nav {
+      background-color: #142b45;
+      padding: 18px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
 
-      <p class="tagline">
-        Building Knowledge, Developing Expertise, Pursuing Excellence
-      </p>
+    nav a: hover {
+      color: #8fc5ed;
+      text-decoration: underline;
+    }
 
-      <p>
-        Cybersecurity is an evolving discipline that requires continuous
-        learning, technical expertise, and professional accountability.
-        Formal education and ongoing professional development provide
-        the foundation for addressing emerging security threats.
-      </p>
-    </section>
+    /* Body Content */
 
-    /*ACADEMIC EDUCATION*/
-    <section class="credential-selection">
-      <h2>01. Academic Education</h2>
-      <article class="educaiton-card">
-        <div class="credential icon" aria-hidden="true">🎓</div>
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #ffffff;
+    }
 
-        <div>
-          <h3>Bachelor of Commerce</h3>
-          <p class="credential-subtitle">
-            Business Technology Management
-          </p>
-          <p class="institution">
-            Toronto Metropolitan University
-          </p>
+    /* What about scarfs? Headings */
 
-          <p>
-            A multidiscipline program combining business processes, information systems, technology management
-            and cybersecurity principles.
-          </p>
+    h1 {
+      color: #24577a;
+      border-bottom: 2px solid #dce5ee;
+      padding-bottom: 8px;
+      margin-top: 30px;
+    }
 
-          <h4>Relevant Areas of Study</h4>
+    a {
+      color: #24577a;
+    }
+
+    a:hover {
+      color: #142b45;
+    }
+
+
+    @media screen and (max-width: 700px) {
+      nav a{
+        display: inline-block;
+        margin: 5px;
+      }
+
+      main {
+        margin: 10px;
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+    }
+  .skills-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 24px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .skills-section h1 {
+    color: #17365d;
+    margin-bottom: 16px
+  }
+  .skills-intro {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .skills-grid {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .skill-card {
+    background: #fff;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  }
+   .skill-icon {
+     font-size: 30px;
+     margin-bottom: 12px;
+   }
+  .skill-card p {
+    color:#555;
+    line-height: 1.6;
+  }
+   .skill-card a {
+     color: #1769aa
+     font-weight: bold;
+     font-weight: bold;
+     text-decoration: underline;
+   }
+  @ media (max-width: 650px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+    
+    
+    
+
+   </style>
+
+  
+</head>
+
+<body>
+
+<nav aria-label="Main navigation">
+  <a href="index.html">Home</a> |
+  <a href="about.html">About Me</a> |
+  <a href="resume.html">Resume</a> |
+  <a href="skills.html">Cybersecurity Skills</a> |
+  <a href="projects.html">Projects and Academic Work</a> |
+  <a href="certifications.html">Certifications and Training</a>
+</nav>
+
+
+<hr>
+
+<section class= "skills-section">
+  <h1>Education, Certifications & Professional Development</h1>
+ <h2>Building Knowledge, Developing Expertise, Pursuing Excellence</h2>
+  <p class="skills-intro">
+ Cybersecurity is an evolving discipline that requires continuous
+  learning, technical expertise, and professional accountability.
+  Formal education and ongoing professional development provide
+  the foundation for addressing emerging security threats.
+</p>
+
+  <h2>01. Academic Education</h2>
+  
+<div class = "skills-grid">
+  <article class="skill-card">
+   <div class="skill-icon">🎓</div> 
+    <h2>Bachelor of Commerce</h2>
+    <h3>Business Technology Management @ Toronto Metropolitan University</h3>
+    <p>
+      A multidiscipline program combining business processes, information systems, technology management
+       and cybersecurity principles.   </p>
+   <h4>Relevant Areas of Study</h4>
           <ul>
             <li>Cybersecurity and Information Privacy</li>
             <li>Information Technology Networking</li>
@@ -74,127 +182,99 @@
             <li>Business Process Management</li>
             <li>IT Project Management</li>
           </ul>
-        </div>
-      </article>
-    </section>
-           
-    /* PROFESSIONAL CERTIFICATIONS */
-    <section class="credential-section">
-      <h2>02. Professional Certifications</h2>
+     </article>
+</div>
+</section>
 
-      <p class="section-description">
+<hr>
+<h2>02. Professional Certifications</h2> 
+<p>
         The following credentials represent foundational knowledge areas within
         a cybersecurity professional development path.
-      </p>
+    </p>
 
-      <div class="Certificaton-grid">
+ <article class="skill-card">
+    <div class="skill-icon">🏅</div>
+    <h3>CompTIA Security+</h3>
+    <p>
+     Secure networks, manage security risks, identify threats, and protect systems and data.
+     </p>
+  </article>
 
-      <article class="certification-card">
-        <div class="credential-icon" aria-hidden="true">🏅</div>
-        <h3>CompTIA Security+</h3>
-        <p class="certification-provider">CompTIA</p>
-        <p>
-          Network infrastructure, connectivity, security principles, 
-          and troubleshooting.
-        </p>
-        <span class="credential-label">Illustrative</span>
-      </article>
+  <article class="skill-card">
+    <div class="skill-icon">🌐</div>
+    <h3>CompTIA Network+</h3>
+  <p>
+  Design, configure, manage, troubleshoot, and secure computer networks.
+  </p>
+  </article>
 
-       <article class="certification-card">
-         <div class="credential-icon" aria-hidden="true">🌐</div>
-         <h3>CompTIA Network+</h3>
-         <p class="certification-provider">CompTIA</p>
-         <p>
-           Network infrastructure, connectivity, security principles,
-           and troubleshooting.
-         </p>
-         <span class="credential-label">illustrative</span>
-       </article>
-        
-       <article class="certification-card">
-         <div class="credential-icon" aria-hidden="true">🛡️</div>
-         <h3>ISC2 Certified in Cybersecurity</h3>
-         <p class="certification-provider">CompTIA</p>
-         <p>
-           Security principles, access controls, business continuity,
-           and security operations.
-         </p>
-         <span class="credential-label">illustrative</span>
-       </article>
-      </div>
-    </section>
+  <article class="skill-card">
+    <div class="skill-icon">🛡️</div>
+    <h3>ISC2 Certified in Cybersecurity</h3>
+    <p>
+      Security principles, access controls, business continuity, and security operations.
+    </p>
+  </article>
+ 
+</div>
+</section>
 
-    /*PROFESSIONAL DEVELOPMENT*/
-    <section class="credential-selection">
-      <h2>03. Professional Development</h2>
-
-      <p class="section-description">
-        Professional growth extends beyond formal education.
-        Practical exercises, technical research, and scenario-based
-        learning contribute to the development of cybersecurity competencies.
-      </p>
-
-      <div class="development-list">
-        <article class="development-item">
-          <div class="development-icon" aria-hidden="true">🔍</div>
-          <div>
-            <h3>Threat Analysis Workshop</h3>
-            <p>
-              A simulated exercise exploring phishing techniques, social engineering, 
-              and indicators of compromise.
-            </p>
-          </div>
-        </article>
-
-        <article class="development-item">
-          <div class="development-icon" aria-hidden="true">🔥</div>
-          <div>
-            <h3>Incidence Response Simulation</h3>
-            <p>
-              A scenario-based investigation involving security alerts, 
-              authentication anomalies, and incident documentation.
-            </p>
-          </div>
-        </article>
-
-         <article class="development-item">
-          <div class="development-icon" aria-hidden="true">📖</div>
-          <div>
-            <h3>MITRE ATT&amp;CK Framework Study</h3>
-            <p>
-              An academic exercise examining adversary tactics, techniques, and 
-              structured threat analysis.
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    /*CONTINUOUS LEARNING */
-    <section class="credential-section learning-section">
-      <h2>04. Commitment to Continuous Learning</h2>
-
-      <p>
-        Maintaining professional competence in cybersecurity
-        requires ongoing education, practical experience, and 
-        awareness of emerging threats.  My professional 
-        development objectives include strengthening technical
-        security knowledge, pursuing advanced training, and 
-        developing the communication and leadership skills
-        necessary to support organizational security 
-        initiatives.
-      </p>
-    </section>
-
-    <p class="portfolio-disclaimer">
-      This ePortfolio includes professional credential and development
-      activities created for academic purposes.
-      </p>
-
-      
+<hr>  
+  <h2>03. Professional Development</h2>
   
+  <p>
+Professional growth extends beyond formal education. Practical exercises, technical research, and scenario-based learning to contribute to the development of cybersecurity competencies.
+  </p>
 
-</main>  
+<article class="skill-card">
+    <div class="skill-icon">🔍</div>
+    <h3>Threat Analysis Workshop</h3>
+    <p>
+     A simulated exercise exploring phishing techniques, social engineering, and indicators of compromise.
+   </p>
+  </article>
+
+  <article class="skill-card">
+    <div class="skill-icon">🔥</div>
+    <h3>Incidence Response Simulation</h3>
+  <p>
+  A scenario-based investigation involving security alerts, authentication anomalies, and incident documentation.
+  </p>
+  </article>
+
+  <article class="skill-card">
+    <div class="skill-icon">📖</div>
+    <h3>MITRE ATT&amp;CK Framework Study</h3>
+    <p>
+An academic exercise examining adversary tactics, techniques, and structured threat analysis.
+</p>
+</article>
+
+</div>
+</section>
+
+<hr>  
+  <h2>04. Commitment to Continuous Learning</h2>
+  
+  <p>
+Maintaining professional competence in cybersecurity requires ongoing education, practical experience, and 
+awareness of emerging threats.  My professional development objectives include strengthening technical
+security knowledge, pursuing advanced training, and developing the communication and leadership skills
+ necessary to support organizational security initiatives.
+</p>
+
+
+<hr>   
+    <footer>
+     <p>
+       <strong>Colin Peart</strong><br>
+      4th Year Toronto Metropolitan University Student<br>
+      Cybersecurity ePortfolio<br>
+    </p>
+    </footer>
+    
+    
+  
 </body>
 </html>
